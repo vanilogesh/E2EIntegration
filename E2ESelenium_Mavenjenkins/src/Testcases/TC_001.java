@@ -16,16 +16,8 @@ public class TC_001 {
 		driver.findElementById("email").sendKeys("vanikodandan@gmail.com");
 		driver.findElementById("pass").sendKeys("vani@18061992");
 		driver.findElement(By.xpath("//input[@value = 'Log In']")).click();
-		assertTrue(driver.getTitle().contains("Title of Page"));
-		//String actualTitle = driver.getTitle();
-		//System.out.println(actualTitle);
-		try {
-			Thread.sleep(20000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		driver.close();
+		
+		driver.quit();
 	}
 	}
 
